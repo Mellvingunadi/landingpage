@@ -1,50 +1,20 @@
 
 'use client';
-import clsx from 'clsx';
-import { useState } from 'react';
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import styles from './Herocomponent.module.css';
+import Header from "./Header";
+import Link from "next/link"
 
 export function Herocomponent() {
-  const [showNav, setShowNav] = useState(false);
 
   return (
     (<div className="flex flex-col min-h-[100dvh]">
-      <header
-        className="bg-primary text-primary-foreground px-4 lg:px-6 py-4 flex items-center justify-between">
-        <Link href="#" className="flex items-center" prefetch={false}>
-          <MountainIcon className="h-6 w-6 mr-2" />
-          <span className="text-xl font-bold">Modularity Solution</span>
-        </Link>
-        <nav className={clsx(styles.nav, { [styles.open]: showNav }, 'lg:flex', 'gap-6')}>
-          <Link href="#" className="hover:underline" prefetch={false}>
-            Home
-          </Link>
-          <Link href="#" className="hover:underline" prefetch={false}>
-            Products
-          </Link>
-          <Link href="#" className="hover:underline" prefetch={false}>
-            Services
-          </Link>
-          <Link href="#" className="hover:underline" prefetch={false}>
-            Testimonials
-          </Link>
-          <Link href="#" className="hover:underline" prefetch={false}>
-            Contact
-          </Link>
-        </nav>
-        <button className={styles.navButton} onClick={() => setShowNav(!showNav)}>
-          {showNav ? <XIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
-        </button>
-        
-      </header>
+      <Header/>
       <main className="flex-1">
-        <section className="bg-primary text-primary-foreground py-12 md:py-24 lg:py-32">
+        <section className="bg-primary text-primary-foreground py-12 md:py-24 lg:py-32" id="home">
           <div className="px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="space-y-4">
@@ -236,7 +206,7 @@ export function Herocomponent() {
           </div>
         </section>
         <section id="contact" className="bg-muted py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-8">
             <div className="space-y-4 text-center">
               <h2 className="text-3xl md:text-4xl font-bold">Get in Touch with Us</h2>
               <p className="text-lg md:text-xl text-muted-foreground">
@@ -339,66 +309,6 @@ function CogIcon(props) {
       <path d="m3.34 17 1.73-1" />
       <path d="m17 3.34-1 1.73" />
       <path d="m11 13.73-4 6.93" />
-    </svg>)
-  );
-}
-
-
-function MenuIcon(props) {
-  return (
-    (<svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round">
-      <line x1="4" x2="20" y1="12" y2="12" />
-      <line x1="4" x2="20" y1="6" y2="6" />
-      <line x1="4" x2="20" y1="18" y2="18" />
-    </svg>)
-  );
-}
-
-
-function MountainIcon(props) {
-  return (
-    (<svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round">
-      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-    </svg>)
-  );
-}
-
-
-function XIcon(props) {
-  return (
-    (<svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round">
-      <path d="M18 6 6 18" />
-      <path d="m6 6 12 12" />
     </svg>)
   );
 }
