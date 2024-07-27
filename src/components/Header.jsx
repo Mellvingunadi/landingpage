@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Navbar,
-  MobileNav,
+  Collapse,
   Typography,
   IconButton,
 } from "@material-tailwind/react";
@@ -121,9 +121,9 @@ function Header() {
         </IconButton>
       </div>
 
-      <MobileNav open={openNav}>
+      <Collapse open={openNav}>
         <div className="container mx-auto text-[color:white]">{navList}</div>
-      </MobileNav>
+      </Collapse>
     </Navbar>
   );
 }
