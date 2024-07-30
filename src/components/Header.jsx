@@ -7,21 +7,21 @@ import {
 } from "@material-tailwind/react";
 
 const navList = (
-  <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+  <ul className="mt-2 mb-4 flex items-center flex-col gap-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
     <Typography
       as="li"
       variant="small"
       color="blue-gray"
       className="flex items-center gap-x-2 p-1 font-medium"
     >
-      <a href="#home" className="flex items-center">
+      <a href="#home" className="flex items-center ">
         Home
       </a>
     </Typography>
     <Typography
       as="li"
       variant="small"
-      color="blue-gray"
+      color="white"
       className="flex items-center gap-x-2 p-1 font-medium"
     >
       <a href="#products" className="flex items-center">
@@ -31,10 +31,10 @@ const navList = (
     <Typography
       as="li"
       variant="small"
-      color="blue-gray"
-      className="flex items-center gap-x-2 p-1 font-medium"
+      color="white"
+      className="flex items-center gap-x-2 p-1 font-medium "
     >
-      <a href="#services" className="flex items-center">
+      <a href="#services" className="flex w-full items-center">
         Services
       </a>
     </Typography>
@@ -71,7 +71,7 @@ function Header() {
   }, []);
 
   return (
-    <Navbar className="text-white sticky top-0 z-10 block w-full max-w-full px-4 py-2 bg-primary rounded border-none shadow-md h-max lg:px-8 lg:py-4">
+    <Navbar className="text-white sticky top-0 z-10 block w-full max-w-full px-4 py-6 bg-[#3E5B72] rounded border-none shadow-md h-max lg:px-8 lg:py-4">
       <div className="flex items-center justify-between text-[color:white]">
         <Typography
           as="a"

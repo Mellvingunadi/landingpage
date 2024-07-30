@@ -14,11 +14,11 @@ export function Herocomponent() {
     (<div className="flex flex-col min-h-[100dvh]">
       <Header/>
       <main className="flex-1">
-        <section className="bg-primary text-primary-foreground py-12 md:py-24 lg:py-32" id="home">
+        <section className="bg-[color:#3E5B72] text-primary-foreground py-12 md:py-24 lg:py-32" id="home">
           <div className="px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="space-y-4">
-                <h1 className="text-4xl md:text-5xl font-bold">Elevate Your Business with Acme Inc.</h1>
+              <div className="space-y-5">
+                <h1 className="text-4xl md:text-5xl font-bold">Elevate Your Business with Modularity Solution</h1>
                 <p className="text-lg md:text-xl">
                   We offer a wide range of products and services to help your business thrive in the digital age.
                 </p>
@@ -112,11 +112,11 @@ export function Herocomponent() {
             </div>
           </div>
         </section>
-        <section id="services" className="bg-muted py-12 md:py-24 lg:py-32">
+        <section id="services" className="bg-[#3E5B72] py-12 md:py-24 lg:py-32">
           <div className="container mx-auto px-8">
             <div className="space-y-5 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold">Our Services</h2>
-              <p className="text-lg md:text-xl text-muted-foreground">
+              <h2 className="text-3xl md:text-4xl text-[color:#fafafa] font-bold">Our Services</h2>
+              <p className="text-lg md:text-xl text-[color:#fdfdfd]">
                 Explore our comprehensive range of services to support your business.
               </p>
             </div>
@@ -145,12 +145,12 @@ export function Herocomponent() {
             </div>
           </div>
         </section>
-        <section id="testimonials" className="py-12 md:py-24 lg:py-32">
+        <section id="testimonials" className="py-12 md:py-24 lg:py-32 bg-muted">
           <div className="px-4 md:px-6">
             <div className="space-y-4 text-center">
               <h2 className="text-3xl md:text-4xl font-bold">What Our Clients Say</h2>
               <p className="text-lg md:text-xl text-muted-foreground">
-                Hear from our satisfied customers about their experience with Acme Inc.
+                Hear from our satisfied customers about their experience with Modularity Solution.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
@@ -205,11 +205,11 @@ export function Herocomponent() {
             </div>
           </div>
         </section>
-        <section id="contact" className="bg-muted py-12 md:py-24 lg:py-32">
+        <section id="contact" className="bg-[#3E5B72] py-12 md:py-24 lg:py-32">
           <div className="container mx-auto px-8">
             <div className="space-y-4 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold">Get in Touch with Us</h2>
-              <p className="text-lg md:text-xl text-muted-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold text-[color:#fafafa]">Get in Touch with Us</h2>
+              <p className="text-lg md:text-xl text-muted">
                 Have a question or want to learn more? Fill out the form below, and we'll be in touch.
               </p>
             </div>
@@ -227,8 +227,8 @@ export function Herocomponent() {
         </section>
       </main>
       <footer
-        className="bg-primary text-primary-foreground px-4 lg:px-6 py-6 flex flex-col sm:flex-row items-center justify-between">
-        <p className="text-sm">&copy; 2024 Acme Inc. All rights reserved.</p>
+        className="bg-muted text-primary px-4 lg:px-6 py-6 flex flex-col sm:flex-row items-center justify-between">
+        <p className="text-sm">&copy; 2024 Modularity Solution. All rights reserved.</p>
         <div className="flex gap-4 mt-4 sm:mt-0">
           <Link href="#" className="hover:underline" prefetch={false}>
             Privacy Policy
