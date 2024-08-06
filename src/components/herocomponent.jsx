@@ -1,4 +1,3 @@
-
 'use client';
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
@@ -11,38 +10,40 @@ import Link from "next/link"
 export function Herocomponent() {
 
   return (
-    (<div className="flex flex-col min-h-[100dvh]">
-      <Header/>
+    <div className="flex flex-col min-h-[100dvh]">
+      <Header />
       <main className="flex-1">
-        <section className="bg-[color:#3E5B72] text-primary-foreground py-12 md:py-24 lg:py-32" id="home">
+        <section
+          className="bg-[color:#3E5B72] text-primary-foreground py-12 md:py-24 lg:py-32"
+          id="home"
+        >
           <div className="px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="space-y-5">
-                <h1 className="text-4xl md:text-5xl font-bold">Elevate Your Business with Modularity Solution</h1>
+                <h1 className="text-4xl md:text-5xl font-bold">
+                  Elevate Your Business with Modularity Solution
+                </h1>
                 <p className="text-lg md:text-xl">
-                  We offer a wide range of products and services to help your business thrive in the digital age.
+                  We specialize in crafting digital products that drive business
+                  success.
                 </p>
                 <div className="flex gap-4">
                   <Link
                     href="#"
-                    className="inline-flex items-center justify-center rounded-md bg-primary-foreground text-primary px-6 py-3 text-sm font-medium shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    prefetch={false}>
-                    Explore Products
-                  </Link>
-                  <Link
-                    href="#"
-                    className="inline-flex items-center justify-center rounded-md border border-primary-foreground bg-primary text-primary-foreground px-6 py-3 text-sm font-medium shadow-sm transition-colors hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    prefetch={false}>
-                    Learn More
+                    className="inline-flex items-center justify-center rounded-md bg-primary-foreground text-primary px-6 py-3 text-sm font-medium shadow-sm transition-colors hover:bg-[color:#248AD7] hover:text-[color:#ffff]"
+                    prefetch={false}
+                  >
+                    Let's Talk!
                   </Link>
                 </div>
               </div>
               <img
-                src="/placeholder.svg"
+                src="/logo.jpg"
                 width={600}
                 height={400}
                 alt="Hero Image"
-                className="rounded-lg shadow-lg" />
+                className="rounded-lg"
+              />
             </div>
           </div>
         </section>
@@ -50,8 +51,10 @@ export function Herocomponent() {
           <div className="px-8 md:px-6">
             <div className="space-y-4 text-center">
               <h2 className="text-3xl md:text-4xl font-bold">Our Products</h2>
-              <p className="text-lg md:text-xl text-muted-foreground">
-                Discover our innovative products that can transform your business.
+              <p className=" text-md md:text-xl text-muted-foreground">
+                We blend innovative design with cutting-edge technology to
+                deliver solutions that are not only visually appealing but also
+                functional and user-friendly.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
@@ -61,16 +64,24 @@ export function Herocomponent() {
                   width={400}
                   height={300}
                   alt="Product 1"
-                  className="w-full h-48 object-cover" />
+                  className="w-full h-48 object-cover"
+                />
                 <div className="p-4">
-                  <h3 className="text-xl font-bold">Product 1</h3>
-                  <p className="text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h3 className="text-xl font-bold">Landing Page</h3>
+                  <p className="text-muted-foreground">
+                    We design and develop compelling landing pages optimized for
+                    conversion, ensuring your marketing campaigns achieve
+                    maximum impact.
+                  </p>
+                  {/*
                   <Link
                     href="#"
                     className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 mt-4"
-                    prefetch={false}>
+                    prefetch={false}
+                  >
                     Learn More
                   </Link>
+                  */}
                 </div>
               </div>
               <div className="bg-background rounded-lg shadow-lg overflow-hidden">
@@ -79,16 +90,22 @@ export function Herocomponent() {
                   width={400}
                   height={300}
                   alt="Product 2"
-                  className="w-full h-48 object-cover" />
+                  className="w-full h-48 object-cover"
+                />
                 <div className="p-4">
-                  <h3 className="text-xl font-bold">Product 2</h3>
-                  <p className="text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <Link
+                  <h3 className="text-xl font-bold">Website</h3>
+                  <p className="text-muted-foreground">
+                    From sleek, modern designs to feature-rich e-commerce
+                    platforms, our websites are built to engage visitors and
+                    drive results.
+                  </p>
+                  {/** <Link
                     href="#"
                     className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 mt-4"
-                    prefetch={false}>
+                    prefetch={false}
+                  >
                     Learn More
-                  </Link>
+                  </Link>*/}
                 </div>
               </div>
               <div className="bg-background rounded-lg shadow-lg overflow-hidden">
@@ -97,16 +114,24 @@ export function Herocomponent() {
                   width={400}
                   height={300}
                   alt="Product 3"
-                  className="w-full h-48 object-cover" />
+                  className="w-full h-48 object-cover"
+                />
                 <div className="p-4">
-                  <h3 className="text-xl font-bold">Product 3</h3>
-                  <p className="text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h3 className="text-xl font-bold">Web Application</h3>
+                  <p className="text-muted-foreground">
+                    Our custom web applications are crafted to streamline
+                    business processes, enhance productivity, and provide
+                    seamless user experiences.
+                  </p>
+                 {/*
                   <Link
                     href="#"
                     className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 mt-4"
-                    prefetch={false}>
+                    prefetch={false}
+                  >
                     Learn More
                   </Link>
+                 */}
                 </div>
               </div>
             </div>
@@ -115,9 +140,12 @@ export function Herocomponent() {
         <section id="services" className="bg-[#3E5B72] py-12 md:py-24 lg:py-32">
           <div className="container mx-auto px-8">
             <div className="space-y-5 text-center">
-              <h2 className="text-3xl md:text-4xl text-[color:#fafafa] font-bold">Our Services</h2>
+              <h2 className="text-3xl md:text-4xl text-[color:#fafafa] font-bold">
+                Our Services
+              </h2>
               <p className="text-lg md:text-xl text-[color:#fdfdfd]">
-                Explore our comprehensive range of services to support your business.
+                Explore our comprehensive range of services to support your
+                business.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
@@ -125,21 +153,24 @@ export function Herocomponent() {
                 <BriefcaseIcon className="h-8 w-8 text-primary" />
                 <h3 className="text-xl font-bold mt-4">Consulting</h3>
                 <p className="text-muted-foreground mt-2">
-                  Our expert consultants provide tailored solutions to help your business thrive.
+                  Our expert consultants provide tailored solutions to help your
+                  business thrive.
                 </p>
               </div>
               <div className="bg-background rounded-lg shadow-lg p-6">
                 <CodeIcon className="h-8 w-8 text-primary" />
                 <h3 className="text-xl font-bold mt-4">Development</h3>
                 <p className="text-muted-foreground mt-2">
-                  Our skilled developers create custom software and web applications to meet your unique needs.
+                  Our skilled developers create custom software and web
+                  applications to meet your unique needs.
                 </p>
               </div>
               <div className="bg-background rounded-lg shadow-lg p-6">
                 <CogIcon className="h-8 w-8 text-primary" />
                 <h3 className="text-xl font-bold mt-4">Support</h3>
                 <p className="text-muted-foreground mt-2">
-                  Our dedicated support team is here to help you every step of the way.
+                  Our dedicated support team is here to help you every step of
+                  the way.
                 </p>
               </div>
             </div>
@@ -148,9 +179,12 @@ export function Herocomponent() {
         <section id="testimonials" className="py-12 md:py-24 lg:py-32 bg-muted">
           <div className="px-4 md:px-6">
             <div className="space-y-4 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold">What Our Clients Say</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                What Our Clients Say
+              </h2>
               <p className="text-lg md:text-xl text-muted-foreground">
-                Hear from our satisfied customers about their experience with Modularity Solution.
+                Hear from our satisfied customers about their experience with
+                Modularity Solution.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
@@ -166,8 +200,9 @@ export function Herocomponent() {
                   </div>
                 </div>
                 <p className="text-muted-foreground mt-4">
-                  "Acme Inc. has been a game-changer for our business. Their\n products and services have helped us
-                  streamline our\n operations and drive growth."
+                  "Acme Inc. has been a game-changer for our business. Their\n
+                  products and services have helped us streamline our\n
+                  operations and drive growth."
                 </p>
               </Card>
               <Card className="bg-background rounded-lg shadow-lg p-6">
@@ -178,12 +213,15 @@ export function Herocomponent() {
                   </Avatar>
                   <div>
                     <h4 className="text-lg font-bold">Sarah Miller</h4>
-                    <p className="text-muted-foreground">Marketing Manager, Acme Corp</p>
+                    <p className="text-muted-foreground">
+                      Marketing Manager, Acme Corp
+                    </p>
                   </div>
                 </div>
                 <p className="text-muted-foreground mt-4">
-                  "I've been working with Acme Inc. for years, and their\n commitment to customer satisfaction is
-                  unparalleled. They\n always go the extra mile to ensure our success."
+                  "I've been working with Acme Inc. for years, and their\n
+                  commitment to customer satisfaction is unparalleled. They\n
+                  always go the extra mile to ensure our success."
                 </p>
               </Card>
               <Card className="bg-background rounded-lg shadow-lg p-6">
@@ -194,12 +232,15 @@ export function Herocomponent() {
                   </Avatar>
                   <div>
                     <h4 className="text-lg font-bold">Tom Wilson</h4>
-                    <p className="text-muted-foreground">IT Manager, Acme Corp</p>
+                    <p className="text-muted-foreground">
+                      IT Manager, Acme Corp
+                    </p>
                   </div>
                 </div>
                 <p className="text-muted-foreground mt-4">
-                  "Acme Inc.'s products and services have been instrumental in\n helping us streamline our IT
-                  infrastructure and improve\n efficiency across the organization."
+                  "Acme Inc.'s products and services have been instrumental in\n
+                  helping us streamline our IT infrastructure and improve\n
+                  efficiency across the organization."
                 </p>
               </Card>
             </div>
@@ -208,9 +249,13 @@ export function Herocomponent() {
         <section id="contact" className="bg-[#3E5B72] py-12 md:py-24 lg:py-32">
           <div className="container mx-auto px-8">
             <div className="space-y-4 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-[color:#fafafa]">Get in Touch with Us</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-[color:#fafafa]">
+                {" "}
+                Ready to elevate your digital presence?
+              </h2>
               <p className="text-lg md:text-xl text-muted">
-                Have a question or want to learn more? Fill out the form below, and we'll be in touch.
+                Get in touch with us today to discuss how we can help you
+                achieve your business goals.
               </p>
             </div>
             <div className="max-w-md mx-auto mt-8">
@@ -226,9 +271,10 @@ export function Herocomponent() {
           </div>
         </section>
       </main>
-      <footer
-        className="bg-muted text-primary px-4 lg:px-6 py-6 flex flex-col sm:flex-row items-center justify-between">
-        <p className="text-sm">&copy; 2024 Modularity Solution. All rights reserved.</p>
+      <footer className="bg-muted text-primary px-4 lg:px-6 py-6 flex flex-col sm:flex-row items-center justify-between">
+        <p className="text-sm">
+          &copy; 2024 Modularity Solution. All rights reserved.
+        </p>
         <div className="flex gap-4 mt-4 sm:mt-0">
           <Link href="#" className="hover:underline" prefetch={false}>
             Privacy Policy
@@ -238,7 +284,7 @@ export function Herocomponent() {
           </Link>
         </div>
       </footer>
-    </div>)
+    </div>
   );
 }
 
