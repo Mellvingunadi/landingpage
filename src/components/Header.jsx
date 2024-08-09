@@ -55,7 +55,7 @@ const navList = (
       className="flex items-center gap-x-2 p-1 font-medium"
     >
       <a href="#contact" className="flex items-center">
-        Contact
+        Discuss
       </a>
     </Typography>
   </ul>
